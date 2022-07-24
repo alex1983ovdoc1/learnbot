@@ -20,7 +20,7 @@ def greet_user(update: Update, context: CallbackContext):
 def talk_to_me(update: Update, context: CallbackContext):
 	user_text = update.message.text
 	# text_print = f'Message User: {user_text}'
-	text_print = f'Hello {update.message.chat.first_name}! Yuo wroute: {user_text}'
+	text_print = f'Hello {update.message.chat.first_name}! You wroute: {user_text}'
 	
 	print('--------------')
 	print(text_print)
