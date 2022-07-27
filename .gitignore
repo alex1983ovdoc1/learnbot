@@ -2,5 +2,8 @@
 bot2.py
 settings123.py
 planet_object.py
-__pycache__
+env/
 .gitignore
+__pycache__/
+
+
