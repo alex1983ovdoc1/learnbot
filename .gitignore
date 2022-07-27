@@ -1,3 +1,6 @@
 *.log
 bot2.py
 settings123.py
+planet_object.py
+__pycache__
+.gitignore
