@@ -58,12 +58,19 @@ def planet_user(update: Update, context: CallbackContext):
 	print(f'Date	: {select_date}')
 	print(f'Location: {select_coordinat}')
 	print('--------------')
+
+	update.message.reply_text(\
+		f' Select planet\t\t\t\t\t\t: \t"{select_planet}"\
+		\nToday date\t\t\t\t\t\t\t\t\t: \t"{select_date}"\
+		\nLocation planet: \t"{select_coordinat}" 		')
 	
 	logging.info(f'User:{update.message.chat.first_name},\
 	Chat id:{update.message.chat.id},\
 	Planet :{select_planet},\
 	Date   :{select_date},\
 	Location: {select_coordinat} ')
+
+
 
 # Функция, которая соединяется с платформой Telegram, тело нашего бота
 def main():
@@ -80,11 +87,12 @@ def main():
 		dp.add_handler(CommandHandler('planet', planet_list))
 		dp.add_handler(CommandHandler(['Sun','Moon','Mercury','Venus','Mars','Jupiter','Saturn','Uranus','Neptune','Pluto'], planet_user))
 		dp.add_handler(MessageHandler(Filters.text, talk_to_me))
+
 		
 		mybot.start_polling()
 		mybot.idle()
 		
-	
+		
 # Вызываем функцию - эта строчка запускает бот
 main()
 
