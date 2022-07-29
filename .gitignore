@@ -3,6 +3,7 @@ bot2.py
 settings123.py
 planet_object.py
 env/
+images/
 .gitignore
 __pycache__/
 
