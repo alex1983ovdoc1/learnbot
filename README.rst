@@ -20,6 +20,7 @@ Settings
 Create file settings.py and add next settings:
 
 .. code-block:: python
+    
     API_KEY = "API_KEY with you received from BotFather"
 
     USER_EMOJI = [':thumbs_up:', ':cat:', ':panda:', ':dog:', ':cow:', ':frog:', ':fox:', \
@@ -32,6 +33,6 @@ Launch
 In the activated virtual environment run:
 
 .. code-block:: text
-    
+
     python bot.py
 
